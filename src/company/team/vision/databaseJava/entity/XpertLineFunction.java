@@ -7,6 +7,8 @@ import javax.persistence.Id;
 import javax.persistence.NamedNativeQuery;
 import javax.persistence.SqlResultSetMapping;
 
+import ch.ivyteam.ivy.environment.Ivy;
+
 @Entity
 @SqlResultSetMapping(name="xpertLineFunction", entities=@EntityResult(entityClass=XpertLineFunction.class))
 @NamedNativeQuery(name="allXpertLineFunction", 
@@ -33,6 +35,7 @@ public class XpertLineFunction {
 		return id;
 	}
 	public void setId(Long id) {
+		Ivy.log().info("anh VUong keu");
 		this.id = id;
 	}
 	
