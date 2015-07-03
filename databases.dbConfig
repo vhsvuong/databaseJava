@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<databaseconfigs/>
+<databaseconfigs>
+    <databaseconfig name="xrfl_integration_test_demo" url="jdbc:sqlserver://192.168.73.24;DatabaseName=XRFL_INTEGRATION_TEST" driver="com.microsoft.sqlserver.jdbc.SQLServerDriver" user="sa" password="\u0024\u00D7\u003B\u00A2\u00AB\u007D\u00DF\u0027\u0099\u0000\u0055\u0053\u00AD\u0040\u000F\u0031\u003F\u00ED\u00EA\u00D8\u00DE\u00D3\u00D9\u0018\u00EB\u0024\u0014\u00A1\u006C\u00DF\u003E\u00E0\u006C\u0003\u0017\u00DC\u00A0\u003B\u00B8\u00B3\u0042\u00D1\u00D8\u002A\u00CA\u00BA\u00DB\u00A8\u00E0\u00DB\u007B\u00D2\u007C\u0001\u0050\u00D8\u0092\u0048\u0062\u0068\u003C\u0081\u00BD\u007E"/>
+</databaseconfigs>

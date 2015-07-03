@@ -39,9 +39,13 @@ public class PersistentFactoryTest {
 	
 	@Test
 	public void shouldReturnDataUsingXrft_Integration_Test_Database() {
-		AdminSettingDao dao = new AdminSettingDaoJpaImpl();
-		List<AdminSetting> result = dao.getAllAdminSetting(PersistentFactory.getEntityManager(PersistentType.PERSISTENT_INTEGRATION_TEST));
-		System.out.println("---------size: "+result.size());
+		
+			AdminSettingDao dao = new AdminSettingDaoJpaImpl();
+			List<AdminSetting> result = dao.getAllAdminSetting(PersistentFactory.getEntityManager(PersistentType.PERSISTENT_INTEGRATION_TEST));
+			System.out.println("---------size: "+result.size());
+			Assert.assertEquals(1, result.size());
+		
+		
 	}
 	
 }
