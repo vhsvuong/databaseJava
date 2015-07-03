@@ -75,4 +75,11 @@ public class XpertLineFunctionDaoImpl implements XpertLineFunctionDao {
 		return functionsQuery.getResultList();
 	}
 
+	
+	@Override
+	public List<XpertLineFunction> getFunctionsByLanguageOnDemo(EntityManager entityManager, String languageCode) {
+		TypedQuery<XpertLineFunction> functionsQuery = entityManager.createNamedQuery("allXpertLineFunction", XpertLineFunction.class);
+		functionsQuery.setParameter(1, languageCode);
+		return functionsQuery.getResultList();
+	}
 }
