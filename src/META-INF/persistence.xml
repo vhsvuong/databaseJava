@@ -13,8 +13,8 @@
             <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/>
         </properties>
     </persistence-unit>
-     <persistence-unit name="xrfl_integration_test">
-        <class>company.team.vision.databaseJava.entity.XpertLineFunction</class>
+    <persistence-unit name="xrfl_integration_test">
+        <class>company.team.vision.databaseJava.entity.AdminSetting</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.connection.driver_class" value="net.sourceforge.jtds.jdbc.Driver"/>
@@ -26,7 +26,7 @@
             <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/>
         </properties>
     </persistence-unit>
-     <persistence-unit name="xrfl_unit_test">
+    <persistence-unit name="xrfl_unit_test">
         <class>company.team.vision.databaseJava.entity.XpertLineFunction</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
