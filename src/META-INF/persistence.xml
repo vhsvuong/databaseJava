@@ -21,7 +21,7 @@
             <property name="hibernate.connection.url" value="jdbc:jtds:sqlserver://192.168.73.24:1433/XRFL_INTEGRATION_TEST"/>
             <property name="hibernate.connection.username" value="sa"/>
             <property name="hibernate.connection.password" value="so9123*&amp;^"/>
-            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
             <property name="hibernate.show_sql" value="false"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/>
         </properties>
