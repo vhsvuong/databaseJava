@@ -15,6 +15,7 @@ import ch.ivyteam.ivy.process.data.persistence.IIvyEntityManager;
 import company.team.vision.databaseJava.JdbcConnectionFactory;
 import company.team.vision.databaseJava.dao.XpertLineFunctionDao;
 import company.team.vision.databaseJava.entity.XpertLineFunction;
+import company.team.vision.databaseJava.utils.JPAUtils;
 
 
 public class XpertLineFunctionDaoImpl implements XpertLineFunctionDao {
@@ -80,6 +81,7 @@ public class XpertLineFunctionDaoImpl implements XpertLineFunctionDao {
 	public List<XpertLineFunction> getFunctionsByLanguageOnDemo(EntityManager entityManager, String languageCode) {
 		TypedQuery<XpertLineFunction> functionsQuery = entityManager.createNamedQuery("allXpertLineFunction", XpertLineFunction.class);
 		functionsQuery.setParameter(1, languageCode);
-		return functionsQuery.getResultList();
+		return JPAUtils.getResultList(functionsQuery, XpertLineFunction.class);
+		//return functionsQuery.getResultList();
 	}
 }
