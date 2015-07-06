@@ -19,7 +19,11 @@ public class JPAUtils {
 	public static <T> T map(Class<T> type, Object[] tuple){
 		   List<Class<?>> tupleTypes = new ArrayList<>();
 		   for(Object field : tuple){
-		      tupleTypes.add(field.getClass());
+			   if(field == null){
+				   tupleTypes.add(String.class);
+			   }else{				   
+				   tupleTypes.add(field.getClass());
+			   }
 		   }
 		   try {
 		      Constructor<T> ctor = type.getConstructor(tupleTypes.toArray(new Class<?>[tuple.length]));
